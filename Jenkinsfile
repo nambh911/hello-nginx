@@ -13,7 +13,7 @@ pipeline{
         }
         stage('Run docker container'){
             steps{
-                sh 'docker run -d ---name hello123 -p 8080:80 hello-nginx'
+                sh 'docker run -d --name hello123 -p 8080:80 hello-nginx'
             }
         }
     }
